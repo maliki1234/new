@@ -14,7 +14,7 @@
         padding: 60px 10px;
     }
     @include media-query($phone){
-           margin: 30px 0;
+           margin: 10px 0;
            align-items: center;
            justify-items: center;
            grid-template-columns: 1fr;
@@ -68,6 +68,11 @@
                     letter-spacing: 0.2em;
                     @include media-query($mediaBp1Width){
                         font-size: 20px;
+                        @include media-query($phone){
+                            padding-left: 17px;
+                            // background: #fff123;
+                            font-size: 18px;
+                        }
                     }
 
                 }

@@ -1,0 +1,26 @@
+
+.back-to-top{
+    // display: static;
+    position: fixed;
+    padding: 4px 15px;
+    bottom: 200px;
+    right: 30px;
+    // background: #a5a5a5;
+    background: #444444;
+    border-radius: 50%;
+    display: none;
+    @include media-query($phone){
+        padding: 3px 13px;
+    }
+    
+    img{
+        width: 20px;
+        @include media-query($mediaBp1Width){
+            width: 15px;
+        }
+    }
+}
+
+.back-to-top:hover{
+    background: #333333;
+}

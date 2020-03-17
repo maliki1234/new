@@ -990,7 +990,7 @@
 
 @media screen and (max-width: 480px) {
   .home .home-inner h3 {
-    font-size: px;
+    font-size: 19px;
   }
 }
 
@@ -1023,7 +1023,7 @@
 
 @media screen and (max-width: 480px) {
   #about {
-    margin: 30px 0;
+    margin: 10px 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1110,6 +1110,13 @@
 @media screen and (max-width: 770px) {
   #about .about-info div q {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 770px) and (max-width: 480px) {
+  #about .about-info div q {
+    padding-left: 17px;
+    font-size: 18px;
   }
 }
 
@@ -1794,5 +1801,35 @@
 
 .footer .footer-overlay .inner-footer .social-net ul li a img {
   width: 20px;
+}
+
+.back-to-top {
+  position: fixed;
+  padding: 4px 15px;
+  bottom: 200px;
+  right: 30px;
+  background: #444444;
+  border-radius: 50%;
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .back-to-top {
+    padding: 3px 13px;
+  }
+}
+
+.back-to-top img {
+  width: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  .back-to-top img {
+    width: 15px;
+  }
+}
+
+.back-to-top:hover {
+  background: #333333;
 }
 /*# sourceMappingURL=main.css.map */

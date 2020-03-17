@@ -1,7 +1,7 @@
 const navbar = document.querySelector("#navbar-purple")
 // const navbar= document.querySelector('')
 const navbarSocial = document.querySelector("#navbar-social")
-
+const back_top = document.querySelector(".back-to-top");
 
 const overlay = document.querySelector('#media .over-overlay')
 const gallery = document.querySelector('#media .gallery')
@@ -84,4 +84,24 @@ window.onscroll = function(){
         navbar.classList.remove("navbar-sticky")
         // navbarSocial.classList.add("navbar-sticky")
     }
+
+
+    if(this.scrollY > 500){
+        back_top.style.display = "block";
+    }
+    else{
+        back_top.style.display = "none"
+    }
+
+
+}
+
+
+back_top.onclick = ()=>{
+    console.log("maliki")
+    window.scrollTo({
+        top: 0,
+        left: 100,
+        behavior: 'smooth'
+    })
 }
