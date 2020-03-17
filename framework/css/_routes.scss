@@ -1,0 +1,144 @@
+
+.routes{
+    width: 100vw;
+    // height: auto;
+    // padding: 0 20px;
+    width: 97%;
+    margin: auto;
+    h1{
+        font-weight: 200;
+        font-size: 35px;
+        text-align: center;
+        margin: 30px 0;
+        text-transform: capitalize;
+    }
+    .routes-container{
+        display: block;
+        overflow: hidden;
+        .column{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            overflow: hidden;
+            .routes-img{
+                display: grid;
+                overflow: hidden;
+                .img{
+                    grid-row: 1;
+                    grid-column: 1;
+                    height: 500px;
+                    object-fit: cover;
+                    width: 100%;
+                }
+                .routes-overlay{
+                    grid-column: 1/1;
+                    grid-row: 1/1;
+                    background: #4b2f2f70;
+                    display: inherit;
+                    align-items: center;
+                    justify-items: center;
+                    font-size: 30px;
+                    color: white;
+
+                }
+            }
+            .routes-explanation{
+                display: grid;
+                overflow: hidden;
+                .routes-explanation-container{
+                    width: 100%;
+                    height: 100%;
+                    grid-row: 1;
+                    grid-column: 1;
+                    display: inherit;
+                    justify-items: center;
+                    align-items: center;
+                    // color: #fff;
+                    h3{
+                        font-size: 40px;
+                        font-weight: 150;
+                        text-align: center;
+                        padding: 40px 0 20px 0;
+                        color: 000;
+                    }
+                }
+                .routes-explanation-container-overlay{
+                    width: 100%;
+                    height: 100%;
+                    grid-row: 1/1;
+                    grid-column: 1/1;
+                    // background: #000000a7;
+                    background: #fff;
+
+                    transform: translateX(100%);
+                    .rates{
+                        width: 100%;
+                        // height: 20px;
+                        padding: 20px 0;
+                        text-align: right;
+                        // margin-right: 30px;
+                        padding-right: 20px;
+                        img{
+                            width: 20px;
+                            display: inline-block;
+                            // float: left;
+                        }
+
+                        
+                    }
+                    h3{
+                        font-size: 30px;
+                        text-align: center;
+                        padding: 20px 0;
+                        
+                    }
+                    p{
+                        padding: 30px;
+                        line-height: 1.5em;
+                        text-align: justify;
+                        font-size: 20px;
+                    }
+                    .read-more{
+                        // display: flex;
+                        ul{
+                            float: right;
+                            // background: #f00;
+                            list-style: none;
+                            span{
+                                margin-bottom: 30px;
+                                position: relative;
+                                bottom: 20px;
+                            }
+                            li{
+                                display: inline;
+                                padding:0 5px;
+                                a{
+                                    img{
+                                        width: 50px;
+                                        // margin-top: 50px;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .column:hover{
+            
+            .routes-img{
+              .routes-overlay{
+                  transform: translateY(100%);
+                  transition: 1s ease;
+              }  
+            }
+            .routes-explanation{
+                .routes-explanation-container-overlay{
+                    transform: translateX(0);
+                    transition: 1s ease;
+                }
+            }
+        }
+    }
+}

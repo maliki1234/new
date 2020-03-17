@@ -1,0 +1,42 @@
+
+
+.home{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 70vh;
+   background-image: url("../../media/gallery/cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-color: aqua;
+    background-attachment: fixed;
+    .home-inner{
+        display: inherit;
+        justify-items: center;
+        h3{
+            //   background: #ffffffaa;
+            color: #fff;
+            font-size: 30px;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: bold;
+            text-transform: capitalize;
+            // padding: 0 20px;
+            padding-bottom: 20px;
+            @include media-query($phone){
+                font-size: px;
+            }
+            }
+            .button{
+                display: inline-block;
+                padding: 15px;
+                background: rgb(81, 123, 248);
+                color: #fff;
+                border: none;
+                margin-top: 30px;
+            }
+    }
+  
+  }
+
+
+ 

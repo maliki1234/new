@@ -1,0 +1,207 @@
+
+.navbar {
+    padding: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    @include media-query($mediaBp1Width){
+        padding: 2px 0;
+    }
+    
+  }
+  
+  .navbar:after {
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: border-box;
+  }
+  
+  .navbar-light {
+    background: #f2f2f2;
+    color: #333333;
+  }
+  
+  .navbar-dark {
+    background-color: #0d0d0d;
+    color: #cccccc;
+  }
+  
+  .navbar-purple {
+    background: #5f26a0f3;
+    color: #fff;
+  }
+  
+  .navbar-sticky {
+    position: -webkit-sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    // background-color: red !important;
+    transition: 2s;
+  }
+  
+  .navbar-social {
+    padding-left: 20px;
+    color: white;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 4fr 2fr;
+        grid-template-columns: 2fr 4fr 2fr;
+    
+    transition: 5s ease;
+    @include media-query($mediaBp1Width){
+        grid-template-columns: 2fr 2fr 2fr;
+        display: none
+    }
+  }
+  
+  .social-logo {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 13px;
+    text-align: right;
+    margin-right: 30px;
+    @include media-query($mediaBp1Width){
+        font-size: 10px;
+        @include media-query($phone){
+            font-size: 8px;
+        }
+    }
+  }
+  .social-icon{
+      // background: #f00;
+      margin-left: 50px;
+      @include media-query($phone){
+          display: none;
+      }
+  
+      a{
+          text-decoration: none;
+          img{
+              width: 20px;
+              padding: 0 2px;
+              margin: 0 5px;
+              @include media-query($phone){
+                  display: none;
+              }
+          }
+      }
+  }
+  
+  .search{
+      // background: #f00;
+      line-height: 20px;
+      display: inline;
+      transition: .5s ease;
+      // background: red;
+      
+      input{
+          border-radius: 20px;
+          border: none;
+          height: 20px;
+          width: 200px;
+          padding: 0 0 0 30px ;
+          display: none;
+          @include media-query($mediaBp1Width){
+              width: 170px;
+             @include media-query($phone){
+                 width: 150px;
+             }
+          }
+          
+          
+  
+      }
+      svg{
+          width: 15px;
+          fill: #fff;
+          position: relative;
+          cursor: pointer;
+          @include media-query($mediaBp1Width){
+              
+          }
+      }
+  }
+  .search:hover{
+      input{
+          display: inline;
+          transition: .5s ease;
+      }
+  }
+  
+  
+  
+  .navbar-nav{
+      padding: 0 30px;
+      @include media-query($phone){
+        padding: 0 20px;
+      }
+      .logo{
+          float: left;
+          margin-left: 30px;
+          // line-height: 20px;
+          // padding: 20px 0;
+          img{
+              width: 40px;
+          }
+          @include media-query($phone){
+              img{
+                  width: 30px;
+              }
+          }
+      }
+      nav{
+          float: right;
+          transition: all 2s ease;
+          @include media-query($phone){
+              padding: 0 20px;
+            //   background: #ffa;
+          }
+          img{
+              width: 20px;
+              display: none;
+              margin-top: 7px;
+            //   background: #ff1111;
+              @include media-query($phone){
+                  display: block;
+              }
+
+          }
+          ul{
+              list-style: none;
+              // line-height: 20px;
+              padding: 0px 0 0 0;
+              @include media-query($phone){
+                  display: none;
+                position: absolute;
+                top: 30px;
+                left: 0;
+                width: 100%;
+              }
+              li{
+                  display: inline;
+                    @include media-query($phone){
+                        background: #282828;
+                        display: block;
+                        padding: 10px 20px;
+                        border: 1px solid;
+                        background: #131313;
+                    }
+                  a{
+                      text-decoration: none;
+                      margin: 0 7px;
+                      color: #fff;
+                      font-family: 'Bellota', cursive;
+                      font-size: 20px;
+                    //   padding: 0 30px;
+                  }
+              }
+          }
+      }
+      nav:hover{
+          transition: 2s ease-in-out;
+          ul{
+              display: block;
+             
+          }
+      }
+  }
