@@ -13,6 +13,11 @@
     .home-inner{
         display: inherit;
         justify-items: center;
+        @include media-query($small-phone){
+            display: inherit;
+            justify-items: center;
+            align-items: center;
+        }
         h3{
             //   background: #ffffffaa;
             color: #fff;
@@ -24,6 +29,10 @@
             padding-bottom: 20px;
             @include media-query($phone){
                 font-size: 19px;
+                @include media-query($small-phone){
+                    font-size: 14px;
+                    text-align: center;
+                }
             }
             }
             .button{

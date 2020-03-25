@@ -13,9 +13,18 @@
         display: grid;
         align-items: center;
         justify-items: center;
+        @include media-query($small-phone){
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
         h2{
             font-size: 55px;
             color: #fff;
+            @include media-query($small-phone){
+                font-size: 30px;
+
+            }
         }
         
     }

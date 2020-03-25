@@ -98,7 +98,7 @@ window.onscroll = function(){
 
 
 back_top.onclick = ()=>{
-    console.log("maliki")
+    // console.log("maliki")
     window.scrollTo({
         top: 0,
         left: 100,

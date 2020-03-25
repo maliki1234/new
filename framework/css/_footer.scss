@@ -14,6 +14,9 @@
         height: 100%;
         background: #161618cc;
         padding: 70px;
+        @include media-query($mediaBp1Width){
+            padding: 40px;
+        }
         .inner-footer{
             width: 90%;
             margin: auto;
@@ -22,20 +25,24 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 2fr;
             @include media-query($mediaBp1Width){
-                width: 94%;
+                width: 100%;
                 overflow-x: hidden;
-                grid-template-columns: 1fr;
-                padding-left: 60px;
+                grid-template-columns: 2fr;
+                // padding-left: 60px;
+                padding: 20px;
+                // background: #ff99ff;
                 
             }
             .logo{
+                margin-right: 200px;
                 display: grid;
                 align-items: center;
                 grid-template-columns: 1;
                 grid-template-rows: 1;
                 justify-items: center;
                 @include media-query($mediaBp1Width){
-                    margin: 20px 0;
+                    // margin: 20px ;
+                    margin: 20px;
                     display: block;
                 }
                 img{
@@ -43,7 +50,7 @@
                     width: 100px;
                     @include media-query($mediaBp1Width){
                         width: 80px;
-                        margin-left: 20px;
+                        // margin-left: 20px;
                     }
                 }
                 
@@ -63,11 +70,11 @@
                     // background: #ff0000;
                     list-style: none;
                     @include media-query($mediaBp1Width){
-                        padding: 10px 20px;
-                        font-style: italic;
+                        padding: 20px 20px;
+                        // font-style: italic;
                     }
                     li {
-                        padding: 5px 0;
+                        padding: 3px 0;
                         a{
                             text-decoration: none;
                             color:#ffffff
@@ -90,14 +97,15 @@
                     // background: #ff0000;
                     list-style: none;
                     @include media-query($mediaBp1Width){
-                        padding: 10px 20px;
-                        font-style: italic;
+                        padding: 20px 10px;
+                        // font-style: italic;
                     }
                     li {
-                        padding: 5px 0;
+                        padding: 15px 0;
                         a{
                             text-decoration: none;
-                            color:#ffffff
+                            color:#ffffff;
+                            font-weight: 20;
                         }
                     }
                 }
@@ -114,7 +122,7 @@
                     padding: 10px;
                     list-style: none;
                     @include media-query($mediaBp1Width){
-                        padding: 10px 20px;
+                        padding: 10px 5px;
                         font-style: italic;
                     }
                     li{

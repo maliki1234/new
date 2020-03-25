@@ -172,10 +172,11 @@
               padding: 0px 0 0 0;
               @include media-query($phone){
                   display: none;
-                position: absolute;
+                position: fixed;
                 top: 30px;
                 left: 0;
                 width: 100%;
+                overflow: visible ;
               }
               li{
                   display: inline;
@@ -185,6 +186,7 @@
                         padding: 10px 20px;
                         border: 1px solid;
                         background: #131313;
+                        text-align: center;
                     }
                   a{
                       text-decoration: none;
@@ -193,6 +195,16 @@
                       font-family: 'Bellota', cursive;
                       font-size: 20px;
                     //   padding: 0 30px;
+                    @include media-query($mediaBp1Width){
+                        width: 20px;
+                        font-family: Roboto, Arial, sans-serif;
+                        // padding: 0 30px;
+                        width: 100%;
+                        height: 100%;
+                        // background: #00f;
+                        text-align: center;
+                        margin: auto;
+                    }
                   }
               }
           }
@@ -201,6 +213,9 @@
           transition: 2s ease-in-out;
           ul{
               display: block;
+              li:hover{
+                  background: grey;
+              }
              
           }
       }
