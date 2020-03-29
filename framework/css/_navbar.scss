@@ -135,7 +135,8 @@
   
   .navbar-nav{
     // background-color: #5f26a0f3;
-    background: #f00;
+    background: #38133F;
+    // background: #f00;
       padding: 0 30px;
       height: 70px;
       @include media-query($mediaBp1Width){
@@ -196,10 +197,13 @@
               @include media-query($phone){
                 display: none;
                 position: fixed;
-                top: 30px;
+                top: 40px;
                 left: 0;
+                right: 0;
                 width: 100%;
+                background: magenta;
                 overflow: visible ;
+                height: 0px;
               }
               li{
                     display: flex;
@@ -211,10 +215,11 @@
                     padding: 0 7px;
                     @include media-query($phone){
                         background: #282828;
-                        display: block;
+                        display: grid;
+                        align-items: center;
                         width: 100%;
                         height: 40px;
-                        padding: 0px 20px;
+                        // padding: 0px 20px;
                         border: 1px solid;
                         background: #131313;
                         text-align: center;
@@ -228,10 +233,10 @@
                       font-size: 20px;
                     //   padding: 0 30px;
                     @include media-query($mediaBp1Width){
-                        width: 20px;
+                        width: 100%;
                         font-family: Roboto, Arial, sans-serif;
                         // padding: 0 30px;
-                        width: 100%;
+                        // width: 100%;
                         height: 100%;
                         // background: #00f;
                         text-align: center;
