@@ -743,6 +743,12 @@
   color: #fff;
 }
 
+@media screen and (max-width: 770px) {
+  .navbar-purple {
+    background: #5f26a0f3;
+  }
+}
+
 .navbar-sticky {
   position: -webkit-sticky;
   position: fixed;

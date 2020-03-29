@@ -28,6 +28,9 @@
   .navbar-purple {
     background: #5f26a0f3;
     color: #fff;
+    @include media-query($mediaBp1Width){
+      background: #5f26a0f3;
+    }
   }
   
   .navbar-sticky {
