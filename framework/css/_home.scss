@@ -10,6 +10,9 @@
     background-repeat: no-repeat;
     // background-color: aqua;
     background-attachment: fixed;
+    @include media-query($phone){
+        background-attachment: fixed;
+    }
     .home-inner{
         display: inherit;
         justify-items: center;
@@ -17,6 +20,7 @@
             display: inherit;
             justify-items: center;
             align-items: center;
+           
         }
         h3{
             //   background: #ffffffaa;

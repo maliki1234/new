@@ -133,8 +133,12 @@
   .navbar-nav{
       padding: 0 30px;
       height: 70px;
-      @include media-query($phone){
-        padding: 0 20px;
+      @include media-query($mediaBp1Width){
+        height: 40px;
+        @include media-query($phone){
+          padding: 0 20px;
+          
+        }
       }
       .logo{
           display: inline-block;
@@ -170,6 +174,7 @@
               margin-top: 7px;
             //   background: #ff1111;
               @include media-query($mediaBp1Width){
+                margin-top: 10px;
                   @include media-query($phone){
                       display: block;
                     //   width: 10px;

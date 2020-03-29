@@ -863,7 +863,13 @@
   height: 70px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 770px) {
+  .navbar-nav {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 770px) and (max-width: 480px) {
   .navbar-nav {
     padding: 0 20px;
   }
@@ -902,6 +908,12 @@
   width: 20px;
   display: none;
   margin-top: 7px;
+}
+
+@media screen and (max-width: 770px) {
+  .navbar-nav nav img {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 770px) and (max-width: 480px) {
@@ -996,6 +1008,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+@media screen and (max-width: 480px) {
+  .home {
+    background-attachment: fixed;
+  }
 }
 
 .home .home-inner {
