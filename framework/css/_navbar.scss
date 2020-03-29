@@ -134,7 +134,8 @@
   
   
   .navbar-nav{
-    background-color: #5f26a0f3;
+    // background-color: #5f26a0f3;
+    background: #f00;
       padding: 0 30px;
       height: 70px;
       @include media-query($mediaBp1Width){
